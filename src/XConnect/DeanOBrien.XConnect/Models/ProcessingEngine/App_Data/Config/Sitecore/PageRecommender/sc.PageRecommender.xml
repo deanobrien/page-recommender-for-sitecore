@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <Sitecore>
+    <Processing>
+      <Services>
+        <IPageRecommender>
+          <Type>DeanOBrien.XConnect.ML.PageRecommender, DeanOBrien.XConnect</Type>
+          <As>DeanOBrien.XConnect.ML.IPageRecommender, DeanOBrien.XConnect</As>
+          <LifeTime>Singleton</LifeTime>
+        </IPageRecommender>
+        <TaskServicesFactory>
+          <Options>
+            <CourseTrainingDeferredWorker>
+              <Type>DeanOBrien.XConnect.ProcessingEngine.PageTrainingDeferredWorker, DeanOBrien.XConnect</Type>
+            </CourseTrainingDeferredWorker>
+            <CourseRecommendationWorker>
+              <Type>DeanOBrien.XConnect.ProcessingEngine.PageRecommendationWorker, DeanOBrien.XConnect</Type>
+            </CourseRecommendationWorker>
+            <RecommendationFacetStorageWorker>
+              <Type>DeanOBrien.XConnect.ProcessingEngine.RecommendationFacetStorageWorker, DeanOBrien.XConnect</Type>
+            </RecommendationFacetStorageWorker>
+          </Options>
+        </TaskServicesFactory>
+        <CourseRecommenderModel>
+          <Type>DeanOBrien.XConnect.Models.ProcessingEngine.PageRecommendationModel, DeanOBrien.XConnect</Type>
+        </CourseRecommenderModel>
+        <ContactModel>
+          <Type>DeanOBrien.XConnect.Models.ProcessingEngine.ContactModel, DeanOBrien.XConnect</Type>
+        </ContactModel>
+      </Services>
+    </Processing>
+    <XConnect>
+      <Services>
+        <XConnect.Client.Configuration>
+          <Options>
+            <Models>
+              <CourseCollectionModel>
+                <TypeName>DeanOBrien.XConnect.Models.PageCollectionModel, DeanOBrien.XConnect</TypeName>
+              </CourseCollectionModel>
+            </Models>
+          </Options>
+        </XConnect.Client.Configuration>
+      </Services>
+    </XConnect>
+  </Sitecore>
+</Settings>
+

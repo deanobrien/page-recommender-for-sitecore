@@ -1,0 +1,50 @@
+{
+  "Name": "PageCollectionModel",
+  "Version": "1.0",
+  "References": [
+    {
+      "Name": "XConnect",
+      "Version": "1.0"
+    },
+    {
+      "Name": "Sitecore.XConnect.Collection.Model",
+      "Version": "10.1"
+    }
+  ],
+  "Types": {
+    "DeanOBrien.XConnect.Models.PageRecommendationFacet": {
+      "Type": "Facet",
+      "BaseType": "Sitecore.XConnect.Facet",
+      "ClrType": "DeanOBrien.XConnect.Models.PageRecommendationFacet, DeanOBrien.XConnect, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Properties": {
+        "PageRecommendations": {
+          "Type": [
+            "DeanOBrien.XConnect.Models.PageRecommendation"
+          ]
+        }
+      }
+    },
+    "DeanOBrien.XConnect.Models.PageRecommendation": {
+      "Type": "Complex",
+      "ClrType": "DeanOBrien.XConnect.Models.PageRecommendation, DeanOBrien.XConnect, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Properties": {
+        "PageId": {
+          "Type": "String"
+        },
+        "Score": {
+          "Type": "Double"
+        },
+        "DateRecommended": {
+          "Type": "DateTime"
+        }
+      }
+    }
+  },
+  "Facets": [
+    {
+      "Target": "Contact",
+      "Name": "PageRecommendationFacet",
+      "Type": "DeanOBrien.XConnect.Models.PageRecommendationFacet"
+    }
+  ]
+}

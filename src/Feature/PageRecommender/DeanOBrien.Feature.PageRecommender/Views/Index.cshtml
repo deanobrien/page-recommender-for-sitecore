@@ -1,0 +1,12 @@
+﻿@model RenderingModel
+
+<script>
+    var pageId = "12345678-1234-1234-1234-123456789012";
+    $('#tab0').click(function () {
+            $.post("/Trigger/Goal/Tab0/" + pageId + "/", function (data) { });
+    });
+</script>
+
+<div>
+    <a id="tab0">TAB 0</a>
+</div>
