@@ -1,4 +1,4 @@
-
+![Sitecore Page Recommender](https://deanobrien.uk/wp-content/uploads/2022/11/recommender-768x329.jpg)
 # Sitecore Page Recommender
 This repository is the companion code to go along side my series of blog posts, that look at my experiences setting up a [page recommendation service for Sitecore](https://deanobrien.uk/sitecore-page-recommender/). 
 
